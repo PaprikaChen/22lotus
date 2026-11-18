@@ -7,7 +7,7 @@ The first demo you can play from start to finish is done.
 - **Prologue** — text fading in line by line over black, leading the player into the Du household.
 - **Four courtyards** — each a long hand-scroll side-scrolling scene.
 - **The incense memory** — a small flashback level inside one courtyard, where an incense burner, a wooden horse and a charm cord open up for investigation one after another.
-- **Two interiors** — a medicine bowl, a stop-motion CG flashback, a bookshelf sequence puzzle, and the first version of the shadow-play stage.
+- **Two interiors** — a stop-motion CG flashback, a bookshelf sequence puzzle, and the first version of the shadow-play stage.
 - **Triple rotary lock** — a mechanism at the end of the front court: three nested dials that open only at the right positions.
 - **Gallery** — collected CGs persist across save slots and can be revisited from the main menu.
 

@@ -12,4 +12,4 @@ Liniang also got a new walk animation.
 
 This week I wrote down the whole of Act 2's story flow in one document: every story beat, which level it sits in, where, and what triggers it.
 
-One thread is now fixed: every escape route Liniang tries is one her mother tried before her. As for what became of her mother — that you'll have to find in the courtyards yourself.
+What it says, I'll leave for the game.

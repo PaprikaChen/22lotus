@@ -252,3 +252,4 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
 
 /* series line above the game title */
 .hero .series { margin: 0 0 14px; font-size: 14px; letter-spacing: 0.3em; color: var(--seal-soft); text-shadow: 0 1px 12px rgba(0,0,0,0.9); }
+.story blockquote small { display: block; margin-top: 10px; font-size: 14px; letter-spacing: 0.1em; }
