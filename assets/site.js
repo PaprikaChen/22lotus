@@ -4,7 +4,7 @@
 const SITE = {
   // B 站视频的 BV 号，例如 "BV1xx411c7mD"；中文界面优先显示它
   // Bilibili BV id, shown first in the Chinese view
-  bilibili: "",
+  bilibili: "BV1NSsm6rEYg",
   // YouTube 视频 id（watch?v= 后面那串）；英文界面优先显示它
   // YouTube video id (the part after watch?v=), shown first in the English view
   youtube: "",
