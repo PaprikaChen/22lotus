@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "2026-11-16-shadow-play-and-act-2",
+    "date": "2026-11-16",
+    "title": { "zh": "皮影戏上台，第二幕动线定稿", "en": "The shadow play goes live, and Act 2 is mapped out" },
+    "summary": { "zh": "十幕皮影戏从测试房搬进正式关卡；第二幕的剧情动线写成了完整文档。", "en": "The ten-act shadow play moved from a test room into the real level, and Act 2's story flow is now fully documented." }
+  },
+  {
+    "slug": "2026-11-10-dreamgap-and-the-chase",
+    "date": "2026-11-10",
+    "title": { "zh": "重做梦隙，加入走廊追逐", "en": "Reworking DreamGap, adding a corridor chase" },
+    "summary": { "zh": "梦隙改成按住消耗的能量模型，并围绕它做了第一段追逐关卡。", "en": "DreamGap became a hold-to-use energy model, and the first chase level was built around it." }
+  },
+  {
+    "slug": "2026-08-30-first-demo",
+    "date": "2026-08-30",
+    "title": { "zh": "第一版 Demo 完成", "en": "The first demo is done" },
+    "summary": { "zh": "从基础系统到四个院落、一个内室，第一版可以从头玩到尾的 Demo。", "en": "From base systems to four courtyards and an interior: the first demo you can play from start to finish." }
+  }
+]

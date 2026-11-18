@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>开发日志 · 二十二莲境</title>
+  <meta name="theme-color" content="#0d0c0b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23b03a2a'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='%23f4e9d8' font-family='serif'%3E莲%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+  <script src="assets/site.js"></script>
+</head>
+<body>
+<nav class="nav solid">
+  <a class="brand" href="index.html"><span class="seal">莲</span><span class="zh">二十二莲境</span><span class="en">22 Lotus Realms</span></a>
+  <div class="nav-right">
+    <button class="lang-toggle" type="button" aria-label="Switch language"><span class="zh">EN</span><span class="en">中文</span></button>
+  </div>
+</nav>
+<main class="article">
+  <div class="wrap">
+    <a class="back" href="devlog.html"><span class="zh">← 全部日志</span><span class="en">← All entries</span></a>
+    <p class="post-date" id="post-date" style="margin-top:28px"></p>
+    <h1 id="post-title"></h1>
+    <div class="body" id="post-body"></div>
+  </div>
+</main>
+<footer><div class="wrap"><span>© 2026 PaprikaChen</span></div></footer>
+<script>
+(async () => {
+  const slug = new URLSearchParams(location.search).get("p") || "";
+  const titleEl = document.getElementById("post-title");
+  const bodyEl = document.getElementById("post-body");
+  const dateEl = document.getElementById("post-date");
+  let post = null;
+  try {
+    post = (await loadPosts()).find((p) => p.slug === slug);
+  } catch (e) { /* handled below */ }
+  if (!post || !/^[\w-]+$/.test(slug)) {
+    titleEl.innerHTML = '<span class="zh">找不到这篇日志</span><span class="en">Entry not found</span>';
+    return;
+  }
+  const cache = {};
+  async function fetchMd(lang) {
+    if (lang in cache) return cache[lang];
+    const res = await fetch(`devlog/${slug}.${lang}.md`, { cache: "no-cache" });
+    cache[lang] = res.ok ? await res.text() : null;
+    return cache[lang];
+  }
+  async function render() {
+    const lang = currentLang();
+    const other = lang === "zh" ? "en" : "zh";
+    const md = (await fetchMd(lang)) ?? (await fetchMd(other)) ?? "";
+    dateEl.textContent = post.date;
+    titleEl.textContent = post.title[lang] || post.title[other];
+    document.title = `${titleEl.textContent} · ${lang === "en" ? "22 Lotus Realms" : "二十二莲境"}`;
+    bodyEl.innerHTML = window.marked ? marked.parse(md) : `<pre>${escapeHtml(md)}</pre>`;
+    bodyEl.querySelectorAll("img").forEach((img) => (img.loading = "lazy"));
+  }
+  render();
+  document.addEventListener("langchange", render);
+})();
+</script>
+</body>
+</html>

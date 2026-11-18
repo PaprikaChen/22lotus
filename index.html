@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>二十二莲境 · 22 Lotus Realms</title>
+  <meta name="description" content="一款以明清深宅为舞台的 2.5D 中式心理恐怖叙事解谜游戏。A 2.5D Chinese psychological horror game about a house built to keep a woman in.">
+  <meta property="og:title" content="二十二莲境 · 22 Lotus Realms">
+  <meta property="og:description" content="2.5D 中式心理恐怖叙事解谜游戏 · A 2.5D Chinese psychological horror game">
+  <meta property="og:image" content="assets/img/og.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0d0c0b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23b03a2a'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='%23f4e9d8' font-family='serif'%3E莲%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/site.js"></script>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="brand" href="#top"><span class="seal">莲</span><span class="zh">二十二莲境</span><span class="en">22 Lotus Realms</span></a>
+  <div class="nav-right">
+    <ul>
+      <li><a href="#video"><span class="zh">影像</span><span class="en">Video</span></a></li>
+      <li><a href="#story"><span class="zh">故事</span><span class="en">Story</span></a></li>
+      <li><a href="#play"><span class="zh">玩法</span><span class="en">Gameplay</span></a></li>
+      <li><a href="#tech"><span class="zh">技术</span><span class="en">Tech</span></a></li>
+      <li><a href="#devlog"><span class="zh">开发日志</span><span class="en">Devlog</span></a></li>
+    </ul>
+    <button class="lang-toggle" type="button" aria-label="Switch language"><span class="zh">EN</span><span class="en">中文</span></button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <h1>二十二莲境</h1>
+    <p class="en-title">22 Lotus Realms</p>
+    <p class="tagline">
+      <span class="zh">一座院子，困住了两代女人。<br>她想逃出去——可每一条路的尽头，都有母亲留下的记号。</span>
+      <span class="en">One house. Two generations of women kept inside it.<br>She wants out — but at the end of every road, her mother has left a mark.</span>
+    </p>
+    <ul class="tags">
+      <li><span class="zh">2.5D 平台跳跃</span><span class="en">2.5D platformer</span></li>
+      <li><span class="zh">心理恐怖</span><span class="en">Psychological horror</span></li>
+      <li><span class="zh">叙事解谜</span><span class="en">Narrative puzzles</span></li>
+      <li><span class="zh">中式复古 · 梦核</span><span class="en">Chinese retro · Dreamcore</span></li>
+    </ul>
+    <div class="actions">
+      <a class="btn" href="#video"><span class="zh">观看实机演示</span><span class="en">Watch the demo</span></a>
+      <a class="btn ghost" href="#devlog"><span class="zh">开发日志</span><span class="en">Devlog</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="video">
+  <div class="wrap reveal">
+    <p class="kicker"><span class="zh">影像</span><span class="en">Gameplay</span></p>
+    <h2><span class="zh">实机演示</span><span class="en">Demo Footage</span></h2>
+    <div class="video-frame" id="video-frame">
+      <div class="soon"><span class="zh">演示视频即将上线</span><span class="en">Gameplay video coming soon</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="story">
+  <div class="wrap story reveal">
+    <div>
+      <p class="kicker"><span class="zh">故事</span><span class="en">Story</span></p>
+      <h2><span class="zh">这座院子，是用来关人的</span><span class="en">This house was built to keep someone in</span></h2>
+      <blockquote>
+        <span class="zh">翻墙，钻狗洞，走水路。<br>每一条路的尽头，都刻着一只小小的山鸟。<br>很多年前，母亲也走过同一条路。</span>
+        <span class="en">Over the wall. Through the dog hole. Down the waterway.<br>At the end of every road, a small mountain bird is carved into the stone.<br>Years ago, her mother walked the very same roads.</span>
+      </blockquote>
+      <p class="dim">
+        <span class="zh">少女丽娘被困在杜府深宅。玩家每一次逃跑的失败，都会揭开这座院子的一层真相，也一步步走近一个关于母女、禁锢与成长的故事。</span>
+        <span class="en">Liniang is trapped in the deep courtyards of the Du household. Every failed escape peels back another layer of the house, and leads the player toward a story about mothers and daughters, confinement, and growing up.</span>
+      </p>
+    </div>
+    <figure>
+      <img src="assets/img/courtyard-moons.jpg" alt="院墙上的月相与拱桥 / Moon phases above the courtyard wall and an arched bridge" loading="lazy" width="1280" height="720">
+      <figcaption><span class="zh">关卡背景 · 前院</span><span class="en">Level art · The front court</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="scroll" style="padding-top:0">
+  <div class="wrap reveal">
+    <p class="kicker"><span class="zh">长卷</span><span class="en">The Scroll</span></p>
+    <h2><span class="zh">院落如画卷展开</span><span class="en">Courtyards that unroll like a hand scroll</span></h2>
+    <div class="scroll-tabs" role="tablist">
+      <button type="button" role="tab" aria-selected="true" data-src="assets/img/scroll-courtyard_01.jpg"><span class="zh">前院</span><span class="en">Front court</span></button>
+      <button type="button" role="tab" aria-selected="false" data-src="assets/img/scroll-courtyard_04.jpg"><span class="zh">院落 · 四</span><span class="en">Courtyard IV</span></button>
+      <button type="button" role="tab" aria-selected="false" data-src="assets/img/scroll-interior_01.jpg"><span class="zh">内室</span><span class="en">Interior</span></button>
+    </div>
+  </div>
+  <div class="panorama" id="panorama">
+    <img src="assets/img/scroll-courtyard_01.jpg" alt="关卡全景背景 / Full level panorama" draggable="false">
+  </div>
+  <p class="scroll-hint"><span class="zh">← 拖动查看 →</span><span class="en">← drag to explore →</span></p>
+</section>
+
+<section id="play">
+  <div class="wrap">
+    <p class="kicker reveal"><span class="zh">玩法</span><span class="en">Gameplay</span></p>
+    <h2 class="reveal"><span class="zh">在梦与现实的缝隙里</span><span class="en">In the gap between dream and waking</span></h2>
+
+    <div class="feature reveal">
+      <div class="feature-img"><img src="assets/img/hero.jpg" alt="" loading="lazy" width="1920" height="1080"></div>
+      <div>
+        <div class="num">01</div>
+        <h3><span class="zh">探索与调查</span><span class="en">Explore &amp; investigate</span></h3>
+        <p><span class="zh">在长卷式的院落中前行，调查物件、偷听对话。分支选择不会惩罚你，但会决定你看见哪一部分过去。</span><span class="en">Walk through scroll-painting courtyards, examine objects and eavesdrop. Branching choices never punish you, but they decide which part of the past you get to see.</span></p>
+      </div>
+    </div>
+
+    <div class="feature reveal">
+      <div class="feature-img"><img src="assets/img/chapter-title.jpg" alt="" loading="lazy" width="1280" height="720"></div>
+      <div>
+        <div class="num">02</div>
+        <h3><span class="zh">梦隙</span><span class="en">DreamGap</span></h3>
+        <p><span class="zh">按住 Shift，世界慢到原来的四分之一，而你仍以正常速度行动——从原本无法通过的地方穿过去。</span><span class="en">Hold Shift and the world slows to a quarter of its speed while you keep moving at full pace, slipping through places that should be impassable.</span></p>
+      </div>
+    </div>
+
+    <div class="feature reveal">
+      <div class="feature-img cg-cycle" role="img" aria-label="定格动画 CG / Stop-motion CG">
+        <img src="assets/img/cg-1.jpg" alt="" loading="lazy" width="1280" height="563">
+        <img src="assets/img/cg-2.jpg" alt="" loading="lazy" width="1280" height="563">
+        <img src="assets/img/cg-3.jpg" alt="" loading="lazy" width="1280" height="563">
+      </div>
+      <div>
+        <div class="num">03</div>
+        <h3><span class="zh">梦奁 · 记忆信物</span><span class="en">The Memory Box</span></h3>
+        <p><span class="zh">收集散落在院中的信物。同一件信物会随着剧情改变它的描述——你对它的理解，就是故事的进度。</span><span class="en">Collect keepsakes scattered through the house. Each one's description changes as the story moves on; how you understand an object is how far you have come.</span></p>
+      </div>
+    </div>
+
+    <div class="feature reveal">
+      <div class="feature-img"><img src="assets/img/shadow-play.jpg" alt="" loading="lazy" width="1280" height="720"></div>
+      <div>
+        <div class="num">04</div>
+        <h3><span class="zh">皮影戏</span><span class="en">Shadow play</span></h3>
+        <p><span class="zh">一座十幕的皮影舞台。每一幕开演前，由你亲手把皮影从书页里拖上台，再看它演完。</span><span class="en">A ten-act shadow-puppet stage. Before each act begins, you drag the puppets out of the book and onto the stage yourself, then watch the act play out.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tech" style="background:var(--ink-2)">
+  <div class="wrap reveal">
+    <p class="kicker"><span class="zh">技术</span><span class="en">Under the hood</span></p>
+    <h2><span class="zh">技术亮点</span><span class="en">Technical highlights</span></h2>
+    <p class="lead dim" style="margin-bottom:40px">
+      <span class="zh">使用 Godot 4 与静态类型 GDScript 开发。设计与架构由我主导，并与 AI 编程工具（Claude Code + Godot MCP）协作实现。</span>
+      <span class="en">Built in Godot 4 with typed GDScript. I led the design and architecture, and implemented it in collaboration with AI coding tools (Claude Code + Godot MCP).</span>
+    </p>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <h3><span class="zh">局部时间缩放</span><span class="en">Local time scaling</span></h3>
+        <p><span class="zh">减速从不修改 <code>Engine.time_scale</code>。世界对象主动拉取缩放后的 delta，玩家、UI 与演出天然不受影响。</span><span class="en">Slow-time never touches <code>Engine.time_scale</code>. World objects pull a scaled delta, so the player, UI and cutscenes are unaffected by construction.</span></p>
+      </div>
+      <div class="tech-card">
+        <h3><span class="zh">读档不重播演出</span><span class="en">Loads never replay cutscenes</span></h3>
+        <p><span class="zh">每个关卡的 StoryDirector 把剧情节点拆成“现场演出”与“幂等恢复”两条链路，读档只摆出终态。</span><span class="en">Each level's StoryDirector splits every beat into a live path and an idempotent restore path; loading only applies end states.</span></p>
+      </div>
+      <div class="tech-card">
+        <h3><span class="zh">版本化存档</span><span class="en">Versioned saves</span></h3>
+        <p><span class="zh">多存档槽、临时文件安全写入、旧存档自动迁移；剧情 Flag 分为持久层与会话层。</span><span class="en">Multiple slots, temp-file safe writes and automatic migration of old saves; story flags split into persistent and session layers.</span></p>
+      </div>
+      <div class="tech-card">
+        <h3><span class="zh">数据 / 状态 / 存档三分</span><span class="en">Data, state and saves apart</span></h3>
+        <p><span class="zh">叙事文案存在 Resource 里，存档只记录状态——文案改多少遍都不会破坏旧存档。</span><span class="en">Narrative text lives in Resources and saves hold only state, so rewriting text never breaks an old save.</span></p>
+      </div>
+      <div class="tech-card">
+        <h3><span class="zh">双移动模式</span><span class="en">Two movement modes</span></h3>
+        <p><span class="zh">同一套玩家代码由关卡配置在横版与 2.5D 纵深之间切换，其他系统完全不感知。</span><span class="en">The same player code switches between side-scrolling and 2.5D depth movement per level; no other system knows which is active.</span></p>
+      </div>
+      <div class="tech-card">
+        <h3><span class="zh">人与 AI 的分工规范</span><span class="en">A human–AI working agreement</span></h3>
+        <p><span class="zh">用规范文档约束 AI 的修改边界：叙事、关卡构成、恐怖节奏与美术方向由人决定；AI 负责实现，并用 headless 自动化测试验证。</span><span class="en">Written rules bound what the AI may change: narrative, level composition, horror pacing and art direction stay human; the AI implements, verified by headless automated tests.</span></p>
+      </div>
+    </div>
+    <div class="stack">
+      <div><b>Godot 4.4</b><span class="zh">引擎</span><span class="en">Engine</span></div>
+      <div><b>130+</b><span class="zh">GDScript 脚本</span><span class="en">GDScript files</span></div>
+      <div><b>30</b><span class="zh">场景</span><span class="en">Scenes</span></div>
+      <div><b>Act 2</b><span class="zh">Demo 可完整游玩</span><span class="en">Demo fully playable</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="devlog">
+  <div class="wrap reveal">
+    <p class="kicker"><span class="zh">开发日志</span><span class="en">Devlog</span></p>
+    <h2><span class="zh">最近的进展</span><span class="en">Latest progress</span></h2>
+    <ul class="posts" id="post-list" data-limit="3"></ul>
+    <a class="more-link" href="devlog.html"><span class="zh">全部日志 →</span><span class="en">All entries →</span></a>
+  </div>
+</section>
+
+<section id="about" style="padding-top:0">
+  <div class="wrap about reveal">
+    <div>
+      <p class="kicker"><span class="zh">关于</span><span class="en">About</span></p>
+      <h2><span class="zh">关于这个项目</span><span class="en">About the project</span></h2>
+    </div>
+    <div>
+      <p>
+        <span class="zh">《二十二莲境》是一个独立游戏项目，由我担任主创与制作人，负责剧情、关卡、设计与技术架构，目前处于 Demo 开发阶段。</span>
+        <span class="en"><em>22 Lotus Realms</em> is an independent game. I am its creator and producer, responsible for story, level design, game design and technical architecture. It is currently in demo development.</span>
+      </p>
+      <p>
+        <span class="zh">合作与联系：</span><span class="en">Collaboration &amp; contact: </span>
+        <a href="https://github.com/PaprikaChen" rel="noopener">GitHub @PaprikaChen</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 PaprikaChen · <span class="zh">保留所有权利。本站所有图像均为游戏开发中画面。</span><span class="en">All rights reserved. All images are from the game in development.</span></span>
+    <a href="#top"><span class="zh">回到顶部 ↑</span><span class="en">Back to top ↑</span></a>
+  </div>
+</footer>
+
+</body>
+</html>
