@@ -1,8 +1,8 @@
-# 二十二莲境 · 22 Lotus Realms — 展示站 / Showcase site
+# 游园惊梦 · You Yuan Jing Meng — 展示站 / Showcase site
 
-《二十二莲境》的公开展示与开发日志网站，通过 GitHub Pages 发布。游戏源码在私有仓库中。
+《游园惊梦》（《二十二莲境》系列第一部）的公开展示与开发日志网站，通过 GitHub Pages 发布。游戏源码在私有仓库中。
 
-Public showcase and devlog for *22 Lotus Realms*, served by GitHub Pages. The game's source code lives in a private repository.
+Public showcase and devlog for *You Yuan Jing Meng*, the first game in the *22 Lotus Realms* series, served by GitHub Pages. The game's source code lives in a private repository.
 
 ## 怎么更新 / How to update
 
