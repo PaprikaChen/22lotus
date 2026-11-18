@@ -9,7 +9,7 @@
   --seal-soft: #d0644f;
   --jade: #87a294;
   --line: rgba(232, 223, 204, 0.14);
-  --serif-zh: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  --serif-zh: "Noto Serif SC", "Source Han Serif SC", "Noto Serif CJK SC", "Songti SC", "STSong", "SimSun", serif;
   --serif-en: "EB Garamond", "Noto Serif SC", Georgia, serif;
   --max: 1120px;
   color-scheme: dark;
